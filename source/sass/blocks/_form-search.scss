@@ -1,0 +1,37 @@
+.form-search {
+  width: 270px;
+  height: 42px;
+}
+
+.form-search__label {
+  font-size: 0;
+}
+
+.form-search__input {
+  display: block;
+  width: 270px;
+  height: 42px;
+  padding-left: 50px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  background-image: url("../../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 13px;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #212a3a;
+  }
+
+  &::placeholder {
+    color: $main-color;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+  }
+}

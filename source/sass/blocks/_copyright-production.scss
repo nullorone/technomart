@@ -1,0 +1,25 @@
+.copyright-production {
+  width: 96px;
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.copyright-production__description {
+  margin: 0;
+}
+
+.copyright-production__link {
+  color: #ffd180;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid #ffd180;
+  }
+
+  &:active {
+    color: #ee3643;
+    border-bottom: none;
+  }
+}

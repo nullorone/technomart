@@ -1,0 +1,25 @@
+.feedback {
+  width: 140px;
+  margin-left: 120px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.feedback__description {
+  margin: 0;
+}
+
+.feedback__link {
+  color: #ffd180;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid #ffd180;
+  }
+
+  &:active {
+    color: #ee3643;
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,75 @@
+.modal-form {
+  width: 100%;
+  height: 100%;
+  padding-top: 48px;
+  position: relative;
+}
+
+.modal-form__fieldset {
+  margin: 0;
+  margin-left: 80px;
+  padding: 0;
+  border: none;
+
+  &--submit {
+    margin-left: 0;
+    margin-top: 35px;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    background-color: #f4f4f4;
+  }
+}
+
+.modal-form__legend {
+  font-size: 0;
+}
+
+.modal-form__label {
+  display: inline-block;
+  width: 220px;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+
+  &--textarea {
+    margin-top: 22px;
+    display: block;
+  }
+}
+
+.modal-form__input {
+  width: 220px;
+  height: 38px;
+  margin-top: 13px;
+  margin-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.modal-form__textarea {
+  width: 460px;
+  min-height: 114px;
+  margin-top: 13px;
+  padding-top: 13px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 2px solid #dee3e4;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.modal-form__submit {
+  display: block;
+  width: 460px;
+  min-height: 38px;
+  margin: 0 auto;
+  color: $main-color;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  background-color: #ee3643;
+}

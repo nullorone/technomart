@@ -1,0 +1,18 @@
+.main__promo {
+  background-color: $main-color;
+  padding-top: 39px;
+}
+
+.main__popular-goods {
+  padding-top: 53px;
+}
+
+.main__popular-company {
+  padding-bottom: 85px;
+}
+
+.main__wrapper-page {
+  &--background {
+    background-color: $main-color;
+  }
+}

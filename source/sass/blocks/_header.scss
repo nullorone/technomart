@@ -1,0 +1,43 @@
+.header {
+  min-height: 320px;
+}
+
+.header__top {
+  min-height: 42px;
+  background-image: linear-gradient(to bottom, transparent 42px, #f3f7f8 42px, #f3f7f8 100%);
+}
+
+.header__top-wrapper {
+  display: flex;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+}
+
+.header__middle {
+  background-color: #f3f7f9;
+  padding-bottom: 60px;
+}
+
+.header__description-logo {
+  width: 197px;
+  margin: 0;
+  margin-right: 70px;
+  color: #ee3643;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.header__middle-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 40px;
+  padding-bottom: 44px;
+}
+
+.header__shop-contacts {
+  margin-right: 69px;
+}

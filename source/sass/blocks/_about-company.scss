@@ -1,0 +1,75 @@
+.about-company {
+  width: 519px;
+  flex-shrink: 0;
+  margin-right: 100px;
+}
+
+.about-company__title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-company__description {
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  font-family: $font-ptsans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about-company__partners {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-company__partner {
+  position: relative;
+  margin-top: 15px;
+  padding-left: 35px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #ee3643;
+  }
+}
+
+.about-company__link {
+  display: inline-block;
+  margin-top: 30px;
+  padding-top: 10px;
+  width: 220px;
+  min-height: 38px;
+  color: $main-color;
+  background-color: #ee3643;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #ca2c37;
+  }
+
+  &:active {
+    background-color: #ba2732;
+  }
+}
