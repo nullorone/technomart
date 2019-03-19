@@ -34,7 +34,9 @@ gulp.task("css", function() {
     )
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer({
+        grid: "autoplace"
+      })
     ]))
     .pipe(gulp.dest("source/css"))
     .pipe(csso({ sourceMap: true }))

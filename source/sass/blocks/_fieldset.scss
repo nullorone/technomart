@@ -1,0 +1,225 @@
+.fieldset {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  &:first-of-type {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.fieldset__title {
+  display: block;
+  padding-top: 20px;
+  font-family: $font-ptsans;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.fieldset__range-block {
+  position: relative;
+  width: 220px;
+  height: 80px;
+  margin-bottom: 9px;
+  padding-top: 1px;
+  font-size: 0;
+  background-color: #f7f3ec;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 2px;
+    transform: translate(-50%, -50%);
+    background-color: #d7dcde;
+  }
+}
+
+.fieldset__range-line {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.fieldset__range-start,
+.fieldset__range-end {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: 40px;
+  font-size: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    transform: translate(-50%, -50%);
+    background-color: #ababab;
+  }
+}
+
+.fieldset__range-start {
+  transform: translate(10px, -50%);
+}
+
+.fieldset__range-end {
+  transform: translate(140px, -50%);
+}
+
+.fieldset__range-label {
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.fieldset__range-input {
+  width: 95px;
+  height: 38px;
+  background-color: #f7f3ec;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  appearance: textfield; // Убирает стрелки в Firefox
+}
+
+.fieldset__range-separator {
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  margin-left: 8px;
+  margin-right: 7px;
+  color: #444444;
+  font-family: $font-ptsans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+// Убираем стрелки в input type=number для Firefox
+.fieldset__range-input:hover,
+.fieldset__range-input:focus {
+  appearance: number-input;
+}
+
+// Убираем стрелки в input type=number для Chrome
+.fieldset__range-input::-webkit-outer-spin-button,
+.fieldset__range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.fieldset__checkbox-input {
+  &:checked + .fieldset__checkbox-label {
+    background-image: url("../../img/icon-checkbox-on.svg");
+  }
+}
+
+.fieldset__checkbox-label {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  margin-bottom: 5px;
+  font-family: $font-ptsans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  background-image: url("../../img/icon-checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__radio-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  font-family: $font-ptsans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &:hover::before {
+    border-color: #b5b5b5;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+
+  &:disabled::before {
+    border-color: rgba(#b5b5b5, 0.4);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 3px solid #c5c5c5;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+}
+
+.fieldset__radio-input {
+  &:checked + .fieldset__radio-label::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #c5c5c5;
+    box-sizing: border-box;
+  }
+}
+
+.fieldset__radio-input:checked + .fieldset__radio-label:hover::after {
+  background-color: #b5b5b5;
+}
+
+.fieldset__radio-input:disabled + .fieldset__radio-label {
+  opacity: 0.4;
+}
+
+.fieldset__radio-input:disabled + .fieldset__radio-label::after {
+  background-color: rgba(#b5b5b5, 0.4);
+}
+

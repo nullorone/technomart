@@ -1,0 +1,116 @@
+.goods {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  grid-template-rows: repeat(3, 338px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.goods__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  width: 220px;
+  height: 318px;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+
+  &:hover {
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+  }
+
+  &:hover .goods__options {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 135px;
+    flex-direction: column;
+    padding-top: 43px;
+    align-items: center;
+    background-color: #ffffff;
+  }
+}
+
+.goods__options {
+  display: none;
+}
+
+.goods__title {
+  width: 158px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0;
+  color: #000000;
+  font-family: $font-ptsans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.goods__price {
+  display: block;
+  position: relative;
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  margin-left: 43px;
+  padding-top: 10px;
+  width: 141px;
+  min-height: 38px;
+  color: $main-color;
+  font-family: $font-ptsans;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ee3643;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  &::before {
+    top: 0;
+    background-image: linear-gradient(45deg, transparent 14px, #ffffff 14px, #ffffff 100%);
+  }
+
+  &::after {
+    bottom: 0;
+    background-image: linear-gradient(135deg, transparent 14px, #ffffff 14px, #ffffff 100%);
+  }
+
+  &--old {
+    position: absolute;
+    bottom: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    margin-top: 16px;
+    padding: 0;
+    color: #999999;
+    background-color: #ffffff;
+    text-decoration: line-through;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+

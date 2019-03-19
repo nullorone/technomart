@@ -1,0 +1,11 @@
+.about {
+  padding-top: 82px;
+  padding-bottom: 85px;
+  color: #000000;
+  background-color: $main-color;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
