@@ -135,7 +135,7 @@
 
 .fieldset__checkbox-input {
   &:checked + .fieldset__checkbox-label {
-    background-image: url("../../img/icon-checkbox-on.svg");
+    background-image: url("../img/icon-checkbox-on.svg");
   }
 }
 
@@ -149,7 +149,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
-  background-image: url("../../img/icon-checkbox-off.svg");
+  background-image: url("../img/icon-checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 8px;
   text-transform: uppercase;
